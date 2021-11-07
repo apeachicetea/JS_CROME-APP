@@ -14,7 +14,6 @@
   <!-- 브라우저에서 기본제공하는 input의 기능을 사용하려면 form태그 안에 작성되어야 한다. -->
     <input 
       required
-      maxlength="15" 
       type="text" 
       placeholder="What is your name?"
     />
@@ -24,18 +23,20 @@
   <h1 id="greeting" class="hidden"></h1>
 
   <form id="todo-form">
-    <input type="text" placeholder="Write a To Do and Press Enter" required />
+    <input class="input-todo" type="text"  required placeholder="What is your forcus for today?"/>
   </form>
   <ul id="todo-list"></ul>
-  
-  <div id="quote">
-    <span></span>
-    <span></span>
-  </div>
+
   <div id="weather">
     <span></span>
     <span></span>
   </div>
+
+  <div id="quote">
+    <span></span>
+    <span></span>
+  </div>
+
   <script src="./js/greetings.js"></script>
   <script src="./js/clock.js"></script>
   <script src="./js/quotes.js"></script>

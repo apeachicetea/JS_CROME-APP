@@ -23,7 +23,7 @@ loginForm.addEventListener('submit', onLoginBtnSubmit)
 
 function paintGreetings() {
   const username = localStorage.getItem(USERNAME_KEY);
-  greeting.textContent = `'Hello ${username} !`;
+  greeting.textContent = `Hello ${username} !`;
   greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 
